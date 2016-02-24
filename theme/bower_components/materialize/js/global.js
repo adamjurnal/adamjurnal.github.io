@@ -1,12 +1,4 @@
-// Required for Meteor package, the use of window prevents export by Meteor
-(function(window){
-  if(window.Package){
-    Materialize = {};
-  } else {
-    window.Materialize = {};
-  }
-})(window);
-
+Materialize = {};
 
 // Unique ID
 Materialize.guid = (function() {
@@ -32,14 +24,8 @@ Materialize.elementOrParentIsFixed = function(element) {
         }
     });
     return isFixed;
-};
+}
 
 // Velocity has conflicts when loaded with jQuery, this will check for it
 var Vel;
-if ($) {
-  Vel = $.Velocity;
-} else if (jQuery) {
-  Vel = jQuery.Velocity;
-} else {
-  Vel = Velocity;
-}
+if ($) { Vel = $.Velocity } else { Vel = Velocity};

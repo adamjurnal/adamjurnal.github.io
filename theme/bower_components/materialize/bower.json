@@ -1,5 +1,6 @@
 {
   "name": "Materialize",
+  "version": "0.96.1",
   "description": "A modern responsive front-end framework based on Material Design",
   "keywords": [
     "css",
@@ -35,8 +36,7 @@
     "font/roboto/Roboto-Regular.woff2",
     "font/roboto/Roboto-Thin.ttf",
     "font/roboto/Roboto-Thin.woff",
-    "font/roboto/Roboto-Thin.woff2",
-    "sass/*"
+    "font/roboto/Roboto-Thin.woff2"
   ],
   "ignore": [
     "jade/",
@@ -58,10 +58,9 @@
     "sitemap.xml",
     "package.json",
     "Gruntfile.js"
+
   ],
   "dependencies": {
-    "jquery": ">=2.1.1"
-  },
-  "devDependencies": {
-  }
+        "jquery": ">=2.1.1"
+    }
 }

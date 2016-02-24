@@ -3,7 +3,7 @@
   $.fn.characterCounter = function(){
     return this.each(function(){
 
-      var itHasLengthAttribute = $(this).attr('length') !== undefined;
+      itHasLengthAttribute = $(this).attr('length') != undefined;
 
       if(itHasLengthAttribute){
         $(this).on('input', updateCounter);
@@ -28,7 +28,7 @@
   }
 
   function addCounterElement($input){
-    var $counterElement = $('<span/>')
+    $counterElement = $('<span/>')
                         .addClass('character-counter')
                         .css('float','right')
                         .css('font-size','12px')
@@ -42,7 +42,7 @@
   }
 
   function addInputStyle(isValidLength, $input){
-    var inputHasInvalidClass = $input.hasClass('invalid');
+    inputHasInvalidClass = $input.hasClass('invalid');
     if (isValidLength && inputHasInvalidClass) {
       $input.removeClass('invalid');
     }
