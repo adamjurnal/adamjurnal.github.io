@@ -1,87 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-        <title>Adam's blog - Test</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="/theme/bower_components/materialize/dist/css/materialize.min.css">
-        <link rel="stylesheet" href="/theme/css/pygment.css">
-        <link rel="stylesheet" href="/theme/css/style.css">
-    </head>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Adam Ali" />
+<meta name="copyright" content="Adam Ali" />
 
-    <body>
-        <header>
-            <nav class="blue-grey darken-3" role="navigation">
-                <div class="nav-wrapper container">
-                    <a href="" class="brand-logo">Adam's blog</a>
-                    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-                    <ul id="dropdown" class="dropdown-content">
-                        <li class="active"><a class="truncate" href="/category/test.html">Test</a></li>
-                    </ul>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a class="dropdown-button" href="#!" data-activates="dropdown">Kategori<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
-                        <li><a href="/archives.html">Archives</a></li>
-                    </ul>
-                    <ul id="mobile-nav" class="side-nav">
-                        <li class="active"><a href="/category/test.html">Test</a></li>
-                        <li><a href="/archives.html">Archives</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="summary">
 
-        <main>
+<meta property="og:title" content="Adam&#39;s blog"/>
+<meta name="twitter:title" content="Adam&#39;s blog">
+<meta property="og:url" content="" />
+<meta property="og:site_name" content="Adam&#39;s blog" />
+<meta property="og:article:author" content="Adam Ali" />
+<title>Adam&#39;s blog
+</title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/theme/css/bootstrap-theme.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/theme/css/pygments.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/theme/tipuesearch/tipuesearch.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/theme/css/elegant.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/theme/css/custom.css" media="screen">
+</head>
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
         <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><span class=site-name>Adam's blog</span></a>
+            </div>
 
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li ><a href="">Home</a></li>
+                    <li ><a href="/categories.html">Categories</a></li>
+                    <li ><a href="/tags.html">Tags</a></li>
+                    <li ><a href="/archives.html">Archives</a></li>
+                    <li>
+                    <form class="navbar-form" role="search" action="/search.html" onsubmit="return validateForm(this.elements['q'].value);">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input">
+                    </form>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
 <div class="row">
-    <div class="card">
-        <div class="card-content flow-text">
-            <h2><a class="orange-text" href="/welcome.html">Welcome</a></h2>
-            <div><p>Hello folks..</p></div>
+
+    <div class="row">
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <header>
+            <h1 id="recent-posts">Recent Posts <a id="allposts" href="/archives.html">all posts</a></h1>
+            </header>
+        <div class="recent-posts">
+            <article>
+                <a href="/welcome.html">Welcome  </a>
+                <section>
+                    posted in
+                <a href="/categories.html#test-ref">Test</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2016-02-23T21:46:00+07:00">Tue 23 February 2016</time>
+                </div>
+                </section>
+            </article>
         </div>
-        <div class="card-action">
-            <a href="/welcome.html">Lire</a>
-            <span class="right">
-                <i class="mdi-action-label-outline" title="tags"> </i>
-            </span>
         </div>
     </div>
-</div>        </div>
-        </main>
-
-        <footer class="page-footer grey darken-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="grey-text">Tentang</h5>
-                        <p class="grey-text">
-                        
-                        </p>
-                    </div>
-                    <div class="col l3 s12">
-                        <h5 class="grey-text">Flux</h5>
-                        <ul>
-                            <li><a class="grey-text" href="/None" title="Flux Atom du Adam's blog">Atom</a></li>
-                        </ul>
-                    </div>
-                    <div class="col l3 s12">
-                        <h5 class="grey-text">Social</h5>
-                        <ul>
-                            <li><a class="grey-text" href="#">You can add links in your config file</a></li>
-                            <li><a class="grey-text" href="#">Another social link</a></li>
-                        </ul>
-                    </div>
-                </div>
+</div>
             </div>
-            <div class="footer-copyright">
-                <div class="container center grey-text text-darken-2">
-                    Powered by <a href="http://blog.getpelican.com/">Pelican</a>, Hosted by <a href="https://pages.github.com/">Github</a> <i class="mdi-action-favorite"></i> - CC-BY-NC-SA
-                </div>
-            </div>
-        </footer>
+        </div>
+    </div>
+<footer>
+    <div class="container">
+    
 
-        <script src="/theme/bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="/theme/bower_components/materialize/dist/js/materialize.min.js"></script>
-        <script src="/theme/js/init.js"></script>
-    </body>
+
+
+        <div class=col-md-12>
+            Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a>
+        </div>
+
+    </div>
+</footer><script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script>
+function validateForm(query)
+{
+    return (query.length > 0);
+}
+</script>
+</body>
+<!-- Theme: Elegant built for Pelican
+    License : http://oncrashreboot.com/pelican-elegant -->
 </html>
